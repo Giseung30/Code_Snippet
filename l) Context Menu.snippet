@@ -2,9 +2,9 @@
 <CodeSnippets>
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>h) Property</Title>
-			<Shortcut>pp</Shortcut>
-			<Description>프로퍼티를 생성합니다.</Description>
+			<Title>l) Context Menu</Title>
+			<Shortcut>ct</Shortcut>
+			<Description>ContextMenu를 만듭니다.</Description>
 			<Author>gskim</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -14,26 +14,15 @@
 		<Snippet>
 			<Declarations>
 				<Literal>
-					<ID>type</ID>
-					<Default>bool</Default>
-				</Literal>
-				<Literal>
 					<ID>name</ID>
 					<Default>name</Default>
 				</Literal>
 			</Declarations>
 			<Code Language="csharp">
-				<![CDATA[private $type$ _$name$;
-public $type$ $name$
+				<![CDATA[[ContextMenu("$name$")]
+public void $name$()
 {
-    get
-    {
-        return _$name$;
-    }
-    set
-    {
-        _$name$ = value;
-    }
+	$end$
 }]]>
 			</Code>
 		</Snippet>

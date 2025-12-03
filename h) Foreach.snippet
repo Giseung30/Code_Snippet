@@ -2,9 +2,9 @@
 <CodeSnippets>
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>m) Line Header</Title>
-			<Shortcut>lh</Shortcut>
-			<Description>Line이 포함된 헤더를 만듭니다.</Description>
+			<Title>h) Foreach</Title>
+			<Shortcut>foreach</Shortcut>
+			<Description>foreach문을 만듭니다.</Description>
 			<Author>gskim</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -17,9 +17,20 @@
 					<ID>var</ID>
 					<Default>var</Default>
 				</Literal>
+				<Literal>
+					<ID>name</ID>
+					<Default>name</Default>
+				</Literal>
+				<Literal>
+					<ID>enumerable</ID>
+					<Default>enumerable</Default>
+				</Literal>
 			</Declarations>
 			<Code Language="csharp">
-				<![CDATA[[Header("$var$ ________________________________________________________________")]$end$]]>
+				<![CDATA[foreach($var$ $name$ in $enumerable$)
+{
+    $end$
+}]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>

@@ -2,9 +2,9 @@
 <CodeSnippets>
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>k) Context Menu</Title>
-			<Shortcut>ct</Shortcut>
-			<Description>ContextMenu를 만듭니다.</Description>
+			<Title>n) Line Header</Title>
+			<Shortcut>lh</Shortcut>
+			<Description>Line이 포함된 헤더를 만듭니다.</Description>
 			<Author>gskim</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -14,16 +14,12 @@
 		<Snippet>
 			<Declarations>
 				<Literal>
-					<ID>name</ID>
-					<Default>name</Default>
+					<ID>var</ID>
+					<Default>var</Default>
 				</Literal>
 			</Declarations>
 			<Code Language="csharp">
-				<![CDATA[[ContextMenu("$name$")]
-public void $name$()
-{
-	$end$
-}]]>
+				<![CDATA[[Header("$var$ ________________________________________________________________")]$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
