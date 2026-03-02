@@ -2,9 +2,9 @@
 <CodeSnippets>
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>n) Line Header</Title>
-			<Shortcut>lh</Shortcut>
-			<Description>Line이 포함된 헤더를 만듭니다.</Description>
+			<Title>pp) Property</Title>
+			<Shortcut>pp</Shortcut>
+			<Description>프로퍼티를 생성합니다.</Description>
 			<Author>gskim</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -14,12 +14,27 @@
 		<Snippet>
 			<Declarations>
 				<Literal>
-					<ID>var</ID>
-					<Default>var</Default>
+					<ID>type</ID>
+					<Default>bool</Default>
+				</Literal>
+				<Literal>
+					<ID>name</ID>
+					<Default>name</Default>
 				</Literal>
 			</Declarations>
 			<Code Language="csharp">
-				<![CDATA[[Header("$var$ ________________________________________________________________")]$end$]]>
+				<![CDATA[private $type$ _$name$;
+public $type$ $name$
+{
+    get
+    {
+        return _$name$;
+    }
+    set
+    {
+        _$name$ = value;
+    }
+}]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>

@@ -2,9 +2,9 @@
 <CodeSnippets>
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>i) Comment Line</Title>
-			<Shortcut>cl</Shortcut>
-			<Description>코멘트를 남길 수 있는 줄을 만듭니다.</Description>
+			<Title>db3) Debug Var3</Title>
+			<Shortcut>db3</Shortcut>
+			<Description>Debug.Log문을 만듭니다.</Description>
 			<Author>gskim</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -14,12 +14,20 @@
 		<Snippet>
 			<Declarations>
 				<Literal>
-					<ID>Comment</ID>
-					<Default>Comment</Default>
+					<ID>var</ID>
+					<Default>var</Default>
+				</Literal>
+				<Literal>
+					<ID>var2</ID>
+					<Default>var2</Default>
+				</Literal>
+				<Literal>
+					<ID>var3</ID>
+					<Default>var3</Default>
 				</Literal>
 			</Declarations>
 			<Code Language="csharp">
-				<![CDATA[//_____________________________________________________ $Comment$]]>
+				<![CDATA[Debug.Log($$"$var$ : {$var$}, $var2$ : {$var2$}, $var3$ : {$var3$}");$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>

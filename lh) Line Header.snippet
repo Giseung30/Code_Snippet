@@ -2,9 +2,9 @@
 <CodeSnippets>
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>e) Debug</Title>
-			<Shortcut>db</Shortcut>
-			<Description>Debug.Log문을 만듭니다.</Description>
+			<Title>lh) Line Header</Title>
+			<Shortcut>lh</Shortcut>
+			<Description>Line이 포함된 헤더를 만듭니다.</Description>
 			<Author>gskim</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -12,8 +12,14 @@
 			</SnippetTypes>
 		</Header>
 		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>var</ID>
+					<Default>var</Default>
+				</Literal>
+			</Declarations>
 			<Code Language="csharp">
-				<![CDATA[Debug.Log("$end$");]]>
+				<![CDATA[[Header("$var$ ________________________________________________________________")]$end$]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>

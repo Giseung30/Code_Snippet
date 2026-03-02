@@ -2,9 +2,9 @@
 <CodeSnippets>
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>g) For</Title>
-			<Shortcut>for</Shortcut>
-			<Description>for문을 만듭니다.</Description>
+			<Title>foreach) Foreach</Title>
+			<Shortcut>foreach</Shortcut>
+			<Description>foreach문을 만듭니다.</Description>
 			<Author>gskim</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -14,20 +14,20 @@
 		<Snippet>
 			<Declarations>
 				<Literal>
-					<ID>i</ID>
-					<Default>i</Default>
+					<ID>var</ID>
+					<Default>var</Default>
 				</Literal>
 				<Literal>
-					<ID>l</ID>
-					<Default>l</Default>
+					<ID>name</ID>
+					<Default>name</Default>
 				</Literal>
 				<Literal>
-					<ID>length</ID>
-					<Default>0</Default>
+					<ID>enumerable</ID>
+					<Default>enumerable</Default>
 				</Literal>
 			</Declarations>
 			<Code Language="csharp">
-				<![CDATA[for(int $i$ = 0, $l$ = $length$; $i$ < $l$; ++$i$)
+				<![CDATA[foreach($var$ $name$ in $enumerable$)
 {
     $end$
 }]]>

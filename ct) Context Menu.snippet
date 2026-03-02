@@ -2,9 +2,9 @@
 <CodeSnippets>
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>h) Foreach</Title>
-			<Shortcut>foreach</Shortcut>
-			<Description>foreach문을 만듭니다.</Description>
+			<Title>ct) Context Menu</Title>
+			<Shortcut>ct</Shortcut>
+			<Description>ContextMenu를 만듭니다.</Description>
 			<Author>gskim</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -14,22 +14,15 @@
 		<Snippet>
 			<Declarations>
 				<Literal>
-					<ID>var</ID>
-					<Default>var</Default>
-				</Literal>
-				<Literal>
 					<ID>name</ID>
 					<Default>name</Default>
 				</Literal>
-				<Literal>
-					<ID>enumerable</ID>
-					<Default>enumerable</Default>
-				</Literal>
 			</Declarations>
 			<Code Language="csharp">
-				<![CDATA[foreach($var$ $name$ in $enumerable$)
+				<![CDATA[[ContextMenu("$name$")]
+public void $name$()
 {
-    $end$
+	$end$
 }]]>
 			</Code>
 		</Snippet>

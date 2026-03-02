@@ -2,9 +2,9 @@
 <CodeSnippets>
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>l) Context Menu</Title>
-			<Shortcut>ct</Shortcut>
-			<Description>ContextMenu를 만듭니다.</Description>
+			<Title>for) For</Title>
+			<Shortcut>for</Shortcut>
+			<Description>for문을 만듭니다.</Description>
 			<Author>gskim</Author>
 			<SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -14,15 +14,22 @@
 		<Snippet>
 			<Declarations>
 				<Literal>
-					<ID>name</ID>
-					<Default>name</Default>
+					<ID>i</ID>
+					<Default>i</Default>
+				</Literal>
+				<Literal>
+					<ID>l</ID>
+					<Default>l</Default>
+				</Literal>
+				<Literal>
+					<ID>length</ID>
+					<Default>0</Default>
 				</Literal>
 			</Declarations>
 			<Code Language="csharp">
-				<![CDATA[[ContextMenu("$name$")]
-public void $name$()
+				<![CDATA[for(int $i$ = 0, $l$ = $length$; $i$ < $l$; ++$i$)
 {
-	$end$
+    $end$
 }]]>
 			</Code>
 		</Snippet>
